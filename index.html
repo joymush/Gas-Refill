@@ -16,6 +16,7 @@
     <div class="form-center">
        <form>
         <p><b>Delivery Details</b></p>
+        <div id = "input_section">
         <label for="place">Place Of Residence:</label><br>
         <input type="text" id="place" name="place"><br>
         <label for="flats">Name Of Flats:</label><br>
@@ -24,10 +25,11 @@
         <input type="house no" id="house no" name="house no"><br>
         <label for="contact no">Contact Number:</label><br>
         <input type="contact no" id="contact no" name="contact no"><br>
+        </div>
        </form>
     </div>
     </p><b>
-    <p class="countdown"><B>COUNT DOWN </B>30Min</p>
+    </div>
     <div class="custom-select" style="width: 200px;">
         <select class="select1">
             <option value="0">Select Company:</option>
@@ -39,15 +41,24 @@
             <option value="0">Select Prices</option>
         </select>
     </div>
+    
         <div class="button">
         <button type="Click me">Submit</button>
             <div class="Onclick">
+                <p id = "para">Please Confirm if the information is correct,Then click to order</p>
                 <button type="Onclick">ORDER NOW</button>
             </div>
         </div>
     </div>
-<footer><input type="text">
+    <section>
+        <div class="container">
+            <h2>00:00</h2>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer id = 'leave message'><input type="text">
     <p>Leave A Message</p>
-</footer>
+    </footer>
+    <script src="./src/index.js"></script>
 </body>
 </html>
