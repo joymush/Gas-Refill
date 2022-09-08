@@ -25,3 +25,8 @@ const initialize= () => {
     function endTime(){
         timeM.innerHTML = 'DELIVERED'
     }
+// write function for order received alert
+    var pressedButton = document.getElementsByClassName("onclick")[0];
+    pressedButton.addEventListener("click", function (event) {
+        alert("Successful Order!We will deliver in 5 minutes")
+    })
