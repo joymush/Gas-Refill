@@ -9,8 +9,11 @@ const initialize= () => {
         console.log(data.results);
         
         const user = data.results[0];
-        let {placeofresidence, nameofflats } = user;
-        let {housenumber, contactnumber } = user.location;
+        let {placeof_residence, nameof_flats } = user;
+        let {house_number, contact_number } = user.location;
+
+        document.getElementById("place").innerHTML = placeof_residence;
+        document.getElementById("flats").innerHTML = nameof_flats;
     }
 // function for countdown
     const timeM = document.querySelector('h2');
