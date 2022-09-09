@@ -17,7 +17,7 @@ const initialize= () => {
     }
 // function for countdown
     const timeM = document.querySelector('h2');
-    let timeSecond = 5;
+    let timeSecond = 10;
 
     displayTime(timeSecond)
 
@@ -45,6 +45,22 @@ const initialize= () => {
     })
 
 // create a comment node and add it to the document
-    const comment = document.createComment("leave comment");
-    document.body.appendChild(comment);
-    
+    var feild = document.querySelector('textarea');
+    var backUp = field.getAttribute('placeholder');
+    var btn = document.querySelector('.btn');
+    var clear = document.getElementById('clear')
+
+    feild.onfocus = function(){
+        this.setAttribute('placeholder', '');
+        this.style.borderColor = '#333';
+        btn.style.display = 'block';
+    }
+
+    feild.onblur = function() {
+        this.setAttribute('placeholder',backUp)
+    }
+
+    clear.onclick = function(){
+        btn.style.display = 'none';
+        field.value = '';
+    }
