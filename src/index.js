@@ -1,8 +1,15 @@
 // write a function that will load content on the DOM
 const initialize= () => {
-    // write a function that fetchs questions from the local server
-}
-    // function for countdown
+} 
+// write a function that fetchs questions from the local server
+    const api_url = "http://localhost:3000/information";
+    async function getUser() {
+
+        const data = await Response.json();
+        console.log(data.results);
+
+    }
+// function for countdown
     const timeM = document.querySelector('h2');
     let timeSecond = 5;
 
@@ -30,3 +37,8 @@ const initialize= () => {
     pressedButton.addEventListener("click", function (event) {
         alert("Successful Order!We will deliver in 5 minutes")
     })
+
+// create a comment node and add it to the document
+    const comment = document.createComment("leave comment");
+    document.body.appendChild(comment);
+    
