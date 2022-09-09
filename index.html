@@ -17,8 +17,10 @@
        <form>
         <p><b>Delivery Details</b></p>
         <div id = "input_section">
-        <label for="place">Place Of Residence:</label><br>
-        <input type="text" id="place" name="place"><br>
+            <div class ="col-25">
+                <label for="place">Place Of Residence:</label><br>
+                <input type="text" id="place" name="place"><br>
+            </div>
         <label for="flats">Name Of Flats:</label><br>
         <input type="flats" id="flats" name="flats"><br>
         <label for="house no">House Number:</label><br>
@@ -27,37 +29,43 @@
         <input type="contact no" id="contact no" name="contact no"><br>
         </div>
        </form>
-    </div>
+        </div>
     </p><b>
     </div>
-    <div class="custom-select" style="width: 200px;">
-        <select class="select1">
-            <option value="0">Select Company:</option>
-        </select>
-        <select>
-            <option value="0">Select Size:</option>
-        </select>
-        <select>
-            <option value="0">Select Prices</option>
-        </select>
+        <div id="sel">
+            <select>
+              <option value="0">Select Size:</option>
+            </select>
+            <select>
+               <option value="0">Select Prices</option>
+            </select>
+        </div>
     </div>
     
         <div class="button">
         <button type="Click me">Submit</button>
-            <div class="Onclick">
-                <p id = "para">Please Confirm if the information is correct,Then click to order</p>
-                <button type="Onclick">ORDER NOW</button>
-            </div>
         </div>
-    </div>
+        <div class="onclick">
+            <button type="button">Order Now</button>
+        </div>
     <section>
         <div class="container">
             <h2>00:00</h2>
         </div>
     </section>
     <!-- footer section -->
-    <footer id = 'leave message'><input type="text">
-    <p>Leave A Message</p>
+    <footer id ='leave_message'>
+        <div class="container">
+        <h3>Leave Us a Comment</h3>
+        <form>
+            <textarea placeholder="Add Your Comment"></textarea>
+            <div class="btn">
+                <input type="submit" value="comment">
+                <button>Cancel</button>
+            </div>
+        </form>
+        </div>
+            
     </footer>
     <script src="./src/index.js"></script>
 </body>
