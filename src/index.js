@@ -64,3 +64,7 @@ const initialize= () => {
         btn.style.display = 'none';
         field.value = '';
     }
+// add function for like
+    function myFunction(x) {
+        x.classList.toggle("fa-thumbs-down");
+    }
