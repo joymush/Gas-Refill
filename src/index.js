@@ -7,7 +7,10 @@ const initialize= () => {
 
         const data = await Response.json();
         console.log(data.results);
-
+        
+        const user = data.results[0];
+        let {placeofresidence, nameofflats } = user;
+        let {housenumber, contactnumber } = user.location;
     }
 // function for countdown
     const timeM = document.querySelector('h2');
