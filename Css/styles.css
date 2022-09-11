@@ -3,9 +3,22 @@
   margin: 0;
   box-sizing: border-box;  
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 body {
-    background-color: lightcyan;
-
+    background-image: url(../images/c.jpg);
+    backdrop-filter: blur(3px);
+    background-position-y: center;
+    background-position-x: center;
+    font-family: 'Playfair Display', serif;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
 }
 section{
     height: 12vh;
@@ -16,12 +29,23 @@ section{
 }
 h1 {
     text-align: center;
+    padding: 2%;
+    color: navy;
+    font-family: sans-serif;
+}
+p {
+    color: gray;
+    font-size:xx-large;
 }
 .form-center {
     text-align: center;
+    padding: 2%;
 }
 #input_section {
     text-align: center;
+    padding: 1%;
+    color: rgb(83, 83, 235);
+    font-size: medium;
 }
 #sel {
     padding: 1%;
@@ -32,11 +56,13 @@ h1 {
 }
 h2{
     font-family: 'Montserrat';
-    font-size: 90px;
+    font-size: 70px;
+    color: gray;
 }
 
 .p {
     position: relative;
+    color: black;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -56,12 +82,55 @@ h2{
     text-align: center;
     align-items: right;
 }
+.container h3
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+textarea {
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background-color: transparent;
+    margin-bottom: 10px;
+    resize:none;
+    outline: none;
+    transition: .5s;
+}
+
+input[type="submit"], button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"]{
+    color: #fff;
+    background-color: #274eb9;
+}
+#clear {
+    color: #333;
+    background-color: transparent;
+}
+#like {
+    padding: 5%;
+    color:#274eb9
+}
+#leave_message {
+    align-items: center;
+}
 footer {
     background-color: lightgray;
-    width: 100%;
+    width: 65%;
     text-align: center;
     border: 2px solid rgb(65, 65, 73);
-    margin: 25px;
-    padding: 100px;
-    border-radius:15px;
+    margin: auto;
+    padding: 10px;
+    border-radius:12px;
+    align-content: center;
 }
+

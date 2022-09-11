@@ -1,20 +1,6 @@
 // write a function that will load content on the DOM
 const initialize= () => {
 } 
-// write a function that fetchs questions from the local server
-    const api_url = "http://localhost:3000/information";
-    async function getUser() {
-
-        const data = await Response.json();
-        console.log(data.results);
-        
-        const user = data.results[0];
-        let {placeof_residence, nameof_flats } = user;
-        let {house_number, contact_number } = user.location;
-
-        document.getElementById("place").innerHTML = placeof_residence;
-        document.getElementById("flats").innerHTML = nameof_flats;
-    }
 // function for countdown
     const timeM = document.querySelector('h2');
     let timeSecond = 10;
@@ -44,6 +30,12 @@ const initialize= () => {
         alert("Successful Order!We will deliver in 5 minutes")
     })
 
+// write function for submit received alert
+    var pressedButton = document.getElementsByClassName("button")[0];
+    pressedButton.addEventListener("click", function (event) {
+        alert("Sizes Selected Available")
+    })
+
 // create a comment node and add it to the document
     var feild = document.querySelector('textarea');
     var backUp = field.getAttribute('placeholder');
@@ -68,3 +60,4 @@ const initialize= () => {
     function myFunction(x) {
         x.classList.toggle("fa-thumbs-down");
     }
+//git add 
