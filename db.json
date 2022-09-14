@@ -1,0 +1,33 @@
+{
+    "information": [
+        {
+            "id": 1,
+            "placeof_residence": "",
+            "nameof_flats": "",
+            "house_number": "",
+            "contact_number": ""
+        },
+        {
+            "id": 1,
+            "placeof_residence": "Rongai",
+            "nameof_flats": "Meyford",
+            "house_number": "14",
+            "contact_number": "9000056782"
+        },
+        {
+            "id": 2,
+            "placeof_residence": "Tumaini",
+            "nameof_flats": "Charvonne flats",
+            "house_number": "c4",
+            "contact_number": "0809176211"
+        },
+        {
+            "id": 3,
+            "placeof_residence": "Kiserian",
+            "nameof_flats": "Amanda Flats",
+            "house_number": "19",
+            "contact_number": "0711100090"
+
+        }
+    ]
+}
