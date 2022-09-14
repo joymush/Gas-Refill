@@ -35,29 +35,19 @@ const initialize= () => {
     pressedButton.addEventListener("click", function (event) {
         alert("Sizes Selected Available")
     })
+// post comments to the Dom on click
+    var post= document.getElementById("post");
+    post.addEventListener("click", function() {
+        var commentBoxValue = document.getElementById("comment-box").value;
 
-// create a comment node and add it to the document
-    var feild = document.querySelector('textarea');
-    var backUp = field.getAttribute('placeholder');
-    var btn = document.querySelector('.btn');
-    var clear = document.getElementById('clear')
-
-    feild.onfocus = function(){
-        this.setAttribute('placeholder', '');
-        this.style.borderColor = '#333';
-        btn.style.display = 'block';
-    }
-
-    feild.onblur = function() {
-        this.setAttribute('placeholder',backUp)
-    }
-
-    clear.onclick = function(){
-        btn.style.display = 'none';
-        field.value = '';
-    }
+        var li = document.createElement("li");
+        var text = document.createTextNode(commentBoxValue);
+        li.appendChild(text);
+        document.getElementById("unordered").appendChild(li);
+    })
 // add function for like
     function myFunction(x) {
         x.classList.toggle("fa-thumbs-down");
     }
-//git add 
+
+
