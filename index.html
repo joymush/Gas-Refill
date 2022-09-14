@@ -5,53 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/styles.css">
-    <title>RIDE ENERGY</title>
+    <title>Ride Energy!</title>
 </head>
 <body id ="body">
     <div class="header">
     <h1>Ride Energy</h1>
-    <img src="./images/d.jpg" class="center"
-    width="80"
-    height="80"
-    />
     <p class="p"><b>The fast and reliable gas station!</b></p>
     </div>
     <p>
     <div class="form-center">
-       <form id="form_input" action="" method="POST">
+    <form id="form_input" action="" method="POST">
         <p><B>Delivery Details</B></p>
         <div id = "input_section">
-            <div class ="col-25">
-                <label for="place">Place Of Residence:</label><br>
-                <input type="text" id="place" name="place"><br>
-            </div>
-        <label for="flats">Name Of Flats:</label><br>
-        <input type="flats" id="flats" name="flats"><br>
-        <label for="house no">House Number:</label><br>
-        <input type="house no" id="house no" name="house no"><br>
-        <label for="contact no">Contact Number:</label><br>
-        <input type="contact no" id="contact no" name="contact no"><br>
+            <label for="place">Place Of Residence:</label><br>
+            <input type="text" id="place" name="place"><br>
+            <label for="flats">Name Of Flats:</label><br>
+            <input type="flats" id="flats" name="flats"><br>
+            <label for="house no">House Number:</label><br>
+            <input type="house no" id="house no" name="house no"><br>
+            <label for="contact no">Contact Number:</label><br>
+            <input type="contact no" id="contact no" name="contact no"><br>
         </div>
-       </form>
-        </div>
-    </p><b>
+    </form>
+        </p><b>
     </div>
-        <div id="sel">
-            <select name="sizes" id="sizes">
-                <option value="select sizes">Select Sizes</option>
-                <option value="6 Kgs">6 Kgs</option>
-                <option value="8 Kgs">8 Kgs</option>
-                <option value="12 Kgs">12 Kgs</optiion>
-            </select>
-            <select name="prices" id="prices">
-               <option value="select prices">Select Prices</option>
-               <option value="1500">Kshs.1500</option>
-               <option value="1800">Kshs.1800</option>
-               <option value="2300">Kshs.2300</option>
-            </select>
-        </div>
     </div>
-    
         <div class="button">
         <button type="Click me">Submit</button>
         </div>
@@ -67,12 +45,12 @@
     <footer id ='leave_message'>
         <div class="container">
         <h3>Leave Us a Comment</h3>
-        <form action="" method="POST" id="commentSection">
-            <textarea placeholder="Add Your Comment"></textarea>
-            <div class="btn">
-                <input type="submit" value="comment">
-                <button id="clear">Cancel</button>
-            </div>
+        <input type="text" id="comment-box" placeholder="Enter Comment">
+        <button id="post">Post</button>
+        <ul id="unordered">
+
+        </ul>
+        </div>
         </form>
         <div id="like">
             <h4>Please Rate us!</h4>
